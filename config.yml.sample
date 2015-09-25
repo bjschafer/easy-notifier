@@ -1,0 +1,8 @@
+# config sample - add your own values
+---
+SMTPServer: "mail.example.com"
+SMTPPort: 587
+SMTPUser: "notify@example.com"
+SMTPPass: "pass2example.com"
+FromEmail: "notify@example.com"
+ToEmails: ["me@example.com", "friend@example.com"]
