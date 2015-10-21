@@ -20,7 +20,9 @@ type config struct {
 
 // Index provides usage information.
 func Index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Usage info goes here...")
+	fmt.Fprintln(w, "Example usage: curl http://url/from=anApp&message=I finished")
+	w.Header().Set("Content-Type", "text/plain;charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
 }
 
 // EmailNotify sends am email to a prespecified recipient based on URL parameters
